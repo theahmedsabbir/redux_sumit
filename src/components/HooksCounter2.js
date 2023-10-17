@@ -10,6 +10,7 @@ function HooksCounter2() {
         dispatch(increment(value))
     }
 
+
     function handleDecrement(value = 1) {
         dispatch(decrement(value))
     }
