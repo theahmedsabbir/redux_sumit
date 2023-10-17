@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../redux/counter/actions";
+import { decrement, increment } from "../redux/counter2/actions";
 
-function Counter() {
-    const value = useSelector((state) => state.counter1.value);
+function HooksCounter2() {
+    const value = useSelector((state) => state.counter2.value);
     const dispatch = useDispatch();
 
     function handleIncrement(value = 1) {
@@ -20,13 +20,13 @@ function Counter() {
             <div className="flex space-x-3">
                 <button
                     className="bg-indigo-400 text-white px-3 py-2 rounded shadow"
-                    onClick={() => handleIncrement(2)}
+                    onClick={() => handleIncrement(10)}
                 >
                     Increment
                 </button>
                 <button
                     className="bg-red-400 text-white px-3 py-2 rounded shadow"
-                    onClick={() => handleDecrement(2)}
+                    onClick={() => handleDecrement(10)}
                 >
                     Decrement
                 </button>
@@ -36,4 +36,4 @@ function Counter() {
 }
 
 
-export default Counter;
+export default HooksCounter2;
