@@ -20,13 +20,13 @@ function Counter() {
             <div className="flex space-x-3">
                 <button
                     className="bg-indigo-400 text-white px-3 py-2 rounded shadow"
-                    onClick={() => handleIncrement(1)}
+                    onClick={() => handleIncrement(3)}
                 >
                     Increment
                 </button>
                 <button
                     className="bg-red-400 text-white px-3 py-2 rounded shadow"
-                    onClick={() => handleDecrement(1)}
+                    onClick={() => handleDecrement(2)}
                 >
                     Decrement
                 </button>
